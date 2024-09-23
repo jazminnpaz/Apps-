@@ -11,10 +11,10 @@ app.use(express.json()); // Asegúrate de que el cuerpo de las solicitudes se pu
 // Crear una conexión a la base de datos MySQL
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'jazminnpaz',
+  user: 'root',
   password: '230206',
   port: '3306', 
-  database: 'bigglift'
+  database: 'biggfit'
 });
 
 connection.connect((err) => {
@@ -86,7 +86,7 @@ app.get('/ejercicios', (req, res) => {
 // Ruta para agregar un ítem (POST /items)
 app.post('/ejercicios', (req, res) => {
   const newItem = req.body; // Obtener el nuevo ítem desde el cuerpo de la solicitud
-  const query = const query = 'INSERT INTO ejercicios (nombre, descripcion, tipo, musculos_trabajados, duracion_sugerida,  nivel_dificultad, equipo_necesario, url_video_demostracion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'; // Asegúrate de ajustar el SQL según tu estructura de tabla
+  const query = 'INSERT INTO ejercicios (nombre, descripcion, tipo, musculos_trabajados, duracion_sugerida,  nivel_dificultad, equipo_necesario, url_video_demostracion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'; // Asegúrate de ajustar el SQL según tu estructura de tabla
   connection.query(query, [nuevoEjercicios.nombre,
     nuevoEjercicios.descripcion,
     nuevoEjercicios.tipo,
@@ -104,7 +104,7 @@ app.post('/ejercicios', (req, res) => {
   });
 });
 
-app.get('/ Entrenamientos', (req, res) => {
+app.get('/Entrenamientos', (req, res) => {
   connection.query('SELECT * FROM  Entrenamientos', (err, results) => {
     if (err) {
       console.error('Error al obtener los  Entrenamientos: ', err);
