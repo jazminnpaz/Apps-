@@ -116,7 +116,7 @@ app.get('/Entrenamientos', (req, res) => {
 });
 
 // Ruta para agregar un ítem (POST /items)
-app.post('/ Entrenamientos', (req, res) => {
+app.post('/Entrenamientos', (req, res) => {
   const newItem = req.body; // Obtener el nuevo ítem desde el cuerpo de la solicitud
   const query = 'INSERT INTO Entrenamientos (nombre, descripcion, tipo, duracion_total, nivel_dificultad) VALUES (?, ?, ?, ?, ?)'; // Asegúrate de ajustar el SQL según tu estructura de tabla
   connection.query(query, [nuevoEntrenamientos.nombre,
