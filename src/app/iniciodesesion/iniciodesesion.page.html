@@ -1,0 +1,65 @@
+<ion-content>
+
+  <div class="container">
+    <img src="assets/bigglift_logo.png" alt="Bigg Lift Logo" class="logo"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <h2>Registrarse</h2>
+    <p>Comenzá tu entrenamiento</p>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label> 
+      <ion-input type="email" placeholder="Ejemplo@email.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" placeholder="••••••••"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Nombre del usuario</ion-label>
+        <ion-input type="text" placeholder="Ingrese su nombre de usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <ion-datetime display-format="DD MMMM YYYY" placeholder="Seleccione su fecha de nacimiento" presentation="date"></ion-datetime>
+    </ion-item>    
+    
+    <ion-item>
+        <ion-label position="floating">Peso</ion-label>
+        <ion-input type="number" placeholder="Ingrese su peso en kg"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Altura</ion-label>
+        <ion-input type="number" placeholder="Ingrese su altura en cm"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Sexo</ion-label>
+        <ion-select placeholder="Seleccione su sexo">
+          <ion-select-option value="masculino">Masculino</ion-select-option>
+          <ion-select-option value="femenino">Femenino</ion-select-option>
+        </ion-select>
+    </ion-item>
+      
+    <ion-item>
+        <ion-label position="floating">Nivel de condición física</ion-label>
+        <ion-select placeholder="Seleccione su nivel de condición física">
+          <ion-select-option value="principiante">Principiante</ion-select-option>
+          <ion-select-option value="intermedio">Intermedio</ion-select-option>
+          <ion-select-option value="avanzado">Avanzado</ion-select-option>
+        </ion-select>
+    </ion-item>
+      
+    <ion-button expand="block">Registrarse</ion-button>
+
+    <p class="forgot-password">
+      <a [routerLink]="['/registrarse']">Iniciar Sesión</a>
+    </p>    
+    
+  </div>
+  
+</ion-content>

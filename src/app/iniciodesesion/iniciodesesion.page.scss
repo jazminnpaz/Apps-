@@ -1,0 +1,97 @@
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  ion-item {
+    margin: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --background: transparent;
+  }
+  
+  ion-input, ion-select, ion-datetime {
+    border-radius: 20px;
+    --padding-start: 15px;
+    --background: transparent;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --highlight-color: transparent; /* Elimina subrayado */
+    --highlight-color-focused: transparent; /* Elimina subrayado cuando está enfocado */
+    --internal-highlight-height: 0; /* Para asegurar que no se muestre el subrayado */
+  }
+  
+  ion-datetime {
+    max-width: 190px; /* Reduce aún más el ancho máximo del campo */
+    font-size: 14px;
+    --height: 40px; /* Ajusta la altura */
+    --padding-start: 10px; /* Ajusta el padding lateral */
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+    --background: rgba(255, 255, 255, 0); /* Asegura que el fondo sea visible */
+    --border-radius: 10px; /* Redondea los bordes */
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    
+  }
+  
+  ion-select {
+    --padding-start: 15px;
+  }
+  
+  ion-button {
+    margin-top: 25px;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    --padding-start: 20px;
+    --padding-end: 20px;
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:last-child {
+    color: rgb(0, 162, 255);
+  }
+  
+  
+  
