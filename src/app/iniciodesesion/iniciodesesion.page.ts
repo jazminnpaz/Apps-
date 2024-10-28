@@ -8,22 +8,22 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./iniciodesesion.page.scss'],
 })
 export class IniciodesesionPage implements OnInit {
-  user = {
-    email: '',
-    password: '',
-    username: '',
-    birthDate: '',
-    weight: null,
-    height: null,
-    gender: '',
-    fitnessLevel: ''
+  Usuarios= {
+    nombre: '',
+    correo_electronico: '',
+    contraseña: '',
+    edad: '',
+    peso: null,
+    altura: null,
+    sexo: '',
+    nivel_condicion_fisica: ''
   };
 
   constructor(private dataService: DataserviceService, private alertCtrl: AlertController) {}
-  
+
   async register() {
     try {
-      const response = await this.dataService.registerUser(this.user).toPromise();
+      const response = await this.dataService.registerUser(this.Usuarios).toPromise();
       const alert = await this.alertCtrl.create({
         header: 'Registro exitoso',
         message: 'Usuario registrado correctamente.',
@@ -40,8 +40,5 @@ export class IniciodesesionPage implements OnInit {
     }
   }
 
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
